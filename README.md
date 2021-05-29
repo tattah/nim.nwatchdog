@@ -33,7 +33,7 @@ wd.add(
       echo file & " " & $evt
     of Deleted:
       echo file & " " & $evt),
-  "this param will pass to the event callback watch js and txt")
+  "this param will be passed to the event callback watch js and txt")
   
 wd.add(
   "/home/zendbit/test/csscript",
@@ -47,7 +47,7 @@ wd.add(
       echo file & " " & $evt
     of Deleted:
       echo file & " " & $evt),
-  "this param will pass to the event callback watch css")
+  "this param will be passed to the event callback watch css")
   
 # watch the file changes
 waitFor wd.watch
